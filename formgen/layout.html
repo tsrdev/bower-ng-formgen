@@ -1,0 +1,24 @@
+<form
+        ng-submit="expr(form.action)"
+        ng-repeat="(formKey, form) in forms"
+        ng-class="resolveClass(form.class, 'form', formKey)"
+        id="{{form.id}}"
+        name="{{form.name}}">
+
+    <fieldset ng-repeat="(fieldsetKey, fieldset) in form.template">
+
+        <div
+                ng-class="resolveClass(fieldset.class, 'fieldset', formKey)"
+                ng-repeat="(elementKey, element) in fieldset.elements">
+
+            <label
+                    ng-class="resolveClass(element.label.class, 'label', formKey)">{{element.label.text}}</label>
+
+            <div
+                    ng-class="resolveClass(element.class, 'formcontrol', formKey)"
+                    ng-include="resolveTemplate(element.attrs.tag, formKey)">
+            </div>
+        </div>
+    </fieldset>
+    <button type="submit">submit</button>
+</form>

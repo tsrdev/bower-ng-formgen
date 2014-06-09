@@ -1,0 +1,9 @@
+<textarea
+        id="{{element.attrs.id}}"
+        name="{{element.attrs.name}}"
+        ng-class="resolveClass(element.attr.class, 'input', formKey)"
+        ng-model="forms[formKey].formData[element.attrs.model]"
+        ng-required="{{element.attrs.required}}"
+        ng-minlength="{{element.attrs.minlength}}"
+        ng-maxlength="{{element.attrs.maxlength}}"
+        ></textarea>

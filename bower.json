@@ -1,0 +1,30 @@
+{
+  "name": "bower-ng-formgen",
+  "version": "0.0.1",
+  "homepage": "https://github.com/tsrdev/bower-ng-formgen",
+  "authors": [
+    "TED Vortex <v@dtk.me>",
+    "Alex P <a@dtk.me>"
+  ],
+  "description": "AngularJS form generation with custom templating and validation rules",
+  "main": "formgen.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "angular",
+    "formgen",
+    "form",
+    "generator",
+    "validation"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
